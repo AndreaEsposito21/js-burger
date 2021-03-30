@@ -24,22 +24,40 @@
                 <h2>Ingredienti</h2>
 
                 <ul>
-                    <li>Cheese</li>
-                    <li>Egg</li>
-                    <li>Mustard</li>
-                    <li>Tomato</li>
-                    <li>Lettuce</li>
-                    <li>Ketchup</li>
+                    <li>
+                        <label for="cheese">Cheese, 1.50 €</label>
+                        <input id="cheese" class="addprice" type="checkbox" value="1.5">
+                    </li>
+                    <li>
+                        <label for="egg">Egg, 1.50 €</label>
+                        <input id="egg" class="addprice" type="checkbox" value="1.5">
+                    </li>
+                    <li>
+                        <label for="mustard">Mustard, 1.00 €</label>
+                        <input id="mustard" class="addprice" type="checkbox" value="1.0">
+                    </li>
+                    <li>
+                        <label for="tomato">Tomato, 1.00 €</label>
+                        <input id="tomato" class="addprice" type="checkbox" value="1.0">
+                    </li>
+                    <li>
+                        <label for="lettuce">Lettuce, 0.50 €</label>
+                        <input id="lettuce" class="addprice" type="checkbox" value="0.5">
+                    </li>
+                    <li>
+                        <label for="ketchup">Ketchup, 0.50 €</label>
+                        <input id="ketchup" class="addprice" type="checkbox" value="0.5">
+                    </li>
                 </ul>
             </div>
 
             <div>
                 <label for="">Discount Coupon</label>
-                <input type="text">
+                <input type="text" placeholder="12345ABCDEF">
             </div>
 
             <div>
-                <button>calculate</button>
+                <button id="calcola">calculate</button>
             </div>
         </main>
 
