@@ -7,11 +7,15 @@ var calcola = document.getElementById('calcola');
 calcola.addEventListener('click', function() {
 
     //
-    var nomePanino = document.getElementById('nome-panino').value;
-    console.log(nomePanino);
-    if (nomePanino === '') {
+    var nomePanino = document.getElementById('nome-panino');
+    
+    // Se il value nome del panino rimane uguale e cioè '', allora esce l'alert 
+    if (nomePanino.value === '') {
         alert('Non hai inserito nessun nome al panino!');
+
+    // Altrimenti, tutti i prezzi aggiunti e gli sconti si applicano
     } else {
+
             // Aggiunte del prezzo degli ingredienti
         var addPriceCheckbox = document.getElementsByClassName('addprice');
         for ( var i = 0; i < addPriceCheckbox.length; i++) {
