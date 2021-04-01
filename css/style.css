@@ -10,6 +10,10 @@ body {
     height: 100vh;
 }
 
+img {
+    width: 20%;
+    vertical-align: middle;
+}
 /* HEADER */
 header {
     background-color: #fdbc41;
@@ -44,6 +48,10 @@ main {
 
 .ingredients-list li {
     padding: 20px;
+}
+
+li img {
+    margin-right: 20px;
 }
 
 .sconto-bottone {
