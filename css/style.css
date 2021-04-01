@@ -10,10 +10,6 @@ body {
     height: 100vh;
 }
 
-img {
-    width: 20%;
-    vertical-align: middle;
-}
 /* HEADER */
 header {
     background-color: #fdbc41;
@@ -52,6 +48,8 @@ main {
 
 li img {
     margin-right: 20px;
+    width: calc(100% / 6);
+    vertical-align: middle;
 }
 
 .sconto-bottone {
