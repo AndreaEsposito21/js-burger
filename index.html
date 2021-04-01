@@ -6,73 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Menù</title>
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <div>
+    
+    <div class="wrapper">
         <header>
             <h1>Create Your Burger</h1>
         </header>
 
         <main>
-            <div>
-                <input id="nome-panino" type="text" placeholder="Nome del tuo panino" value="">
-            </div>
-
-            <div>
-                <h2>Ingredienti</h2>
-
-                <ul>
-                    <li>
-                        <label for="cheese">Cheese, 1.50 €</label>
-                        <input id="cheese" class="addprice" type="checkbox" value="1.5">
-                    </li>
-                    <li>
-                        <label for="egg">Egg, 1.50 €</label>
-                        <input id="egg" class="addprice" type="checkbox" value="1.5">
-                    </li>
-                    <li>
-                        <label for="mustard">Mustard, 1.00 €</label>
-                        <input id="mustard" class="addprice" type="checkbox" value="1.0">
-                    </li>
-                    <li>
-                        <label for="tomato">Tomato, 1.00 €</label>
-                        <input id="tomato" class="addprice" type="checkbox" value="1.0">
-                    </li>
-                    <li>
-                        <label for="lettuce">Lettuce, 0.50 €</label>
-                        <input id="lettuce" class="addprice" type="checkbox" value="0.5">
-                    </li>
-                    <li>
-                        <label for="ketchup">Ketchup, 0.50 €</label>
-                        <input id="ketchup" class="addprice" type="checkbox" value="0.5">
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <label for="coupon">Discount Coupon</label>
-                <input id="coupon" type="text" placeholder="12345ABCDEF" value="">
-            </div>
-
-            <div>
-                <button id="calcola">calculate</button>
+            <div class="container">
+                <div class="burger-name col-lg-12">
+                    <input id="nome-panino" type="text" placeholder="Nome del tuo panino" value="">
+                </div>
+    
+                <div class="col-lg-12 lista">
+                    <h2>Ingredienti</h2>
+    
+                    <ul class="ingredients-list">
+                        <li class="col-lg-6">
+                            <label for="cheese">Cheese, 1.50 €</label>
+                            <input id="cheese" class="addprice" type="checkbox" value="1.5">
+                        </li>
+                        <li class="col-lg-6">
+                            <label for="egg">Egg, 1.50 €</label>
+                            <input id="egg" class="addprice" type="checkbox" value="1.5">
+                        </li>
+                        <li class="col-lg-6">
+                            <label for="mustard">Mustard, 1.00 €</label>
+                            <input id="mustard" class="addprice" type="checkbox" value="1.0">
+                        </li>
+                        <li class="col-lg-6">
+                            <label for="tomato">Tomato, 1.00 €</label>
+                            <input id="tomato" class="addprice" type="checkbox" value="1.0">
+                        </li>
+                        <li class="col-lg-6">
+                            <label for="lettuce">Lettuce, 0.50 €</label>
+                            <input id="lettuce" class="addprice" type="checkbox" value="0.5">
+                        </li>
+                        <li class="col-lg-6">
+                            <label for="ketchup">Ketchup, 0.50 €</label>
+                            <input id="ketchup" class="addprice" type="checkbox" value="0.5">
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="sconto-bottone col-lg-12">
+                    <div class="col-lg-12 sconto">
+                        <label for="coupon">Discount Coupon</label>
+                        <input id="coupon" type="text" placeholder="12345ABCDEF" value="">
+                    </div>
+        
+                    <div class="col-lg-12 bottone">
+                        <button id="calcola">calculate</button>
+                    </div>
+                </div>
             </div>
         </main>
 
         <footer>
-            <div>
-                <h2>Your Price</h2>
-                <h2 id="final-price"></h2>
-            </div>
-
-            <div>
-                <h2></h2>
+            <div class="container">
+                <div class="col-lg-6 prezzo-text">
+                    <h2>Your Price</h2>
+                </div>
+    
+                <div class="col-lg-6 prezzo-num">
+                    <h2 id="final-price"></h2>
+                </div>
             </div>
         </footer>
     </div>
 
+    <!-- JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
